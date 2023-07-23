@@ -19,6 +19,7 @@ html {
 body {
   font-family: 'PPNeue';
   font-weight: 400;
+  font-size: 1.8rem;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -83,13 +84,6 @@ a {
   position: absolute;
 }
 
-.intro__images img {
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  transform-origin: center center;
-}
-
 .intro__images img:nth-child(3),
 .intro__images img:nth-child(2),
 .intro__images img:nth-child(5),
@@ -141,6 +135,12 @@ a {
   left: 6.8vw;
 }
 
+.intro__images img {
+  top: 50%;
+  left: 50%;
+  transform-origin: center center;
+}
+
 .intro__center-image {
   width: 100%;
   height: 100vh;
@@ -150,6 +150,7 @@ a {
   z-index: 2;
   overflow: hidden;
   transform: translate(-50%, -50%);
+  opacity: 0;
 }
 
 .intro__center-image img {
